@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script src="../jquery-3.5.1.min.js"></script>
+</head>
+<body>
+	<label>mi valor</label>
+	<input type="checkbox" id="micheckbox" name="">
+</body>
+</html>
+
+<script type="text/javascript">
+	$(document).ready(function() {
+
+		$('#micheckbox').prop("checked", true);
+
+		$('#micheckbox').click(function()
+		{
+			if($('#micheckbox').is(':checked'))
+			{
+				alert("Esta chequeado el control");
+			}else
+			{
+				alert("No esta check tu control");
+			}
+		});
+	});
+</script>
